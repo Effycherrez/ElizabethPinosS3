@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EPinos_s3.ventana">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="wallpaper.jpg" Aspect="AspectFill"/>
+            <BoxView Color="LightCyan" Opacity="0.8"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+
+          <StackLayout Grid.Row="1" Padding="30,20">
+                    <Image Grid.Row="0" Source="logo.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+
+                    <Label x:Name="lblUsuario"/>
+                   
+                    <Entry x:Name="TxtDato1" Placeholder="Ingrese Nota de seguimiento1"/>
+                    <Entry x:Name="TxtDato2" Placeholder="Examen 1"/>
+                    <Entry x:Name="TxtDato3" Placeholder="Ingrese Nota de seguimiento2"/>
+                    <Entry x:Name="TxtDato4" Placeholder="Examen 2"/>
+                    <Entry x:Name="TxtTotal" Placeholder="Resultado total" IsReadOnly="True"/>
+                    <Button Text="Sumar" x:Name="btnSumar" BackgroundColor="LightCyan" BorderRadius="20" TextColor="Black" Clicked="btnSumar_Clicked"/>
+
+                </StackLayout>
+             </Grid>
+             </Grid>
+    </ContentPage.Content>
+</ContentPage>
